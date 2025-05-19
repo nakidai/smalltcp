@@ -1,0 +1,11 @@
+SmallTCP
+========
+these are small scripts for TCP client (buc) and server (bus). buc connects to a
+server and works like netcat. bus broadcasts messages between peers.
+
+usages:
+buc [ip [port]]
+bus [port [ip]]
+
+default port in 8604
+default ip is (client == buc ? 127.0.0.1 : 0.0.0.0)
