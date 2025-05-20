@@ -4,7 +4,7 @@
 #include <sys/socket.h>
 #include <poll.h>
 
-err(), warn(), warnx(), read(), write(), close();
+atoi(), err(), warn(), warnx(), read(), write(), close();
 
 #define SOCKETS_MAX 128
 #define BUFFER_SIZE 512
