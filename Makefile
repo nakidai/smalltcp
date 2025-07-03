@@ -2,7 +2,8 @@ RM ?= rm -f
 PREFIX ?= /usr/local/
 BINDIR ?= ${PREFIX}/bin
 
-CC = cc -ansi -fno-builtin
+CFLAGS.veryneeded != [ "${CC}" != tcc ] && echo -ansi -fno-builtin
+CFLAGS += ${CFLAGS.veryneeded}
 
 .PHONY: all
 all: buc bus
