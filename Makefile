@@ -2,7 +2,7 @@ RM ?= rm -f
 PREFIX ?= /usr/local/
 BINDIR ?= ${PREFIX}/bin
 
-CFLAGS += -ansi
+CC = cc -ansi -fno-builtin
 
 .PHONY: all
 all: buc bus

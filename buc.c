@@ -4,7 +4,6 @@
 #include <poll.h>
 
 char buf[512]; progress;
-atoi(), err(), exit(), read(), write();
 
 #define	readbuf(sock)	((((progress = read((sock), buf, sizeof(buf))) == -1) && err(1, "read()") || !progress && exit(0)), progress)
 #define	sendbuf(sock, size)	(write(sock, buf, size) == -1 && err(1, "write()"))
